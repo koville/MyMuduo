@@ -26,10 +26,6 @@ public:
 
     void HandleEvent();
 
-    void OnNewConnectComming(Socket *sock);
-    void OnMessage(Socket *sock);
-    void OnClose(Socket *sock);
-
 private:
     Epoll    *m_ep;
     int       m_fd;
